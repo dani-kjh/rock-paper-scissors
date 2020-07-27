@@ -1,0 +1,1 @@
+This is my version of the "rock-paper-scissors" project from The Odin Project 
