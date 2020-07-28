@@ -57,13 +57,23 @@
                                 return `You Win! ${playerSelection} beats ${computerSelection}`;
                             } 
                             break;
+                        default:
+                            console.log("Invalid user input");
                     }
                 }
             }
+            
 
-            const playerSelection = "rock";
-            const computerSelection = computerPlay();
-            console.log(playRound(playerSelection, computerSelection));
+            function game(){
+                let i;
+                for(i = 0; i < 5; i++){
+                    let playerSelection = prompt("what will you play");
+                    let computerSelection = computerPlay();
+                    let result = playRound(playerSelection, computerSelection);
+                    console.log(result);
+
+                }
+            }
 
         </script>
     </body>
